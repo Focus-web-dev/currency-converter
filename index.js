@@ -55,10 +55,10 @@ async function getCurrency (date) {
         obj.RUB = data[17].Cur_OfficialRate / 100;
     }
 
-    elementUSD.innerHTML = obj.USD.toFixed(4);
-    elementEUR.innerHTML = obj.EUR.toFixed(4);
-    elementCNY.innerHTML = (obj.CNY * 10).toFixed(4);
-    elementRUB.innerHTML = (obj.RUB * 100).toFixed(4);
+    elementUSD.innerHTML =data[5].Cur_OfficialRate.toFixed(4);
+    elementEUR.innerHTML = data[6].Cur_OfficialRate.toFixed(4);
+    elementCNY.innerHTML = data[12].Cur_OfficialRate.toFixed(4);
+    elementRUB.innerHTML = data[17].Cur_OfficialRate.toFixed(4);
 
     preload.classList.add('invise');
 
